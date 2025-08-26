@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Memória - Frutas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tela-inicio" id="telaInicio">
+    <h1>🍓🍉🍇🥝Jogo da Memória - Frutas 🍓🍉🍇🥝</h1>
+    <button onclick="iniciarJogo()">Jogar</button>
+  </div>
+
+  <div class="jogo" id="jogo">
+    <div class="status">
+      ⏳ Tempo: <span id="tempo">60</span>s | ⭐ Score: <span id="score">0</span> | 🔢 Nível: <span id="nivel">1</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="tela-fim" id="telaFim" style="display:none;">
+    <h2 id="mensagemFinal"></h2>
+    <button onclick="reiniciar()">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
